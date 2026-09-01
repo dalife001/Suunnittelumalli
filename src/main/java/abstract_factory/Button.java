@@ -1,0 +1,8 @@
+package abstract_factory;
+
+public abstract class Button extends UIElement {
+    public Button(String text) {
+        super(text);
+    }
+    void display() {}
+}
