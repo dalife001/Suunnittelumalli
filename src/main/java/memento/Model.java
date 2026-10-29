@@ -32,7 +32,7 @@ public class Model {
 
     public void restoreState(IMemento memento) {
         if (!(memento instanceof Memento savedState)) {
-            throw new IllegalArgumentException("Unsupported memento implementation");
+            throw new IllegalArgumentException("Error invalid memento");
         }
         int[] savedOptions = savedState.getOptions();
         System.arraycopy(savedOptions, 0, options, 0, options.length);
