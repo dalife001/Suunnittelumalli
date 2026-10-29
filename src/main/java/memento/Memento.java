@@ -5,7 +5,7 @@ import java.time.format.DateTimeFormatter;
 
 public final class Memento implements IMemento {
     private static final DateTimeFormatter DISPLAY_FORMAT =
-            DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
+            DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm:ss");
 
     private final int[] options;
     private final boolean isSelected;

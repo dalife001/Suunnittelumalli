@@ -53,7 +53,7 @@ public class Gui extends Application {
         });
 
         stage.setScene(scene);
-        stage.setTitle("Memento Pattern Example");
+        stage.setTitle("Memento Pattern");
         stage.show();
     }
 

@@ -27,7 +27,7 @@ public class ColorBox {
 
     public void setColor(int colorIndex) {
         if (colorIndex < 0 || colorIndex >= colors.length) {
-            throw new IllegalArgumentException("Unknown color index: " + colorIndex);
+            throw new IllegalArgumentException("Unknown color " + colorIndex);
         }
         this.colorIndex = colorIndex;
         rectangle.setFill(colors[colorIndex]);
