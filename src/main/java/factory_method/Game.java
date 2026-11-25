@@ -9,7 +9,7 @@ import javafx.stage.Stage;
 public class Game extends Application {
     private static final int DEFAULT_WIDTH = 20;
     private static final int DEFAULT_HEIGHT = 15;
-
+           
     public Map createMap(String mapType, int width, int height) {
         if (mapType == null || mapType.isBlank()) {
             throw new IllegalArgumentException("Map type must be city or wilderness.");
@@ -35,7 +35,7 @@ public class Game extends Application {
 
         ScrollPane scrollPane = new ScrollPane(canvas);
         scrollPane.setPannable(true);
-        stage.setTitle("RPG Map - " + type + " (" + width + "x" + height + ")");
+        stage.setTitle("Map - " + type + " (" + width + "x" + height + ")");
         stage.setScene(new Scene(scrollPane, Math.min(canvas.getWidth() + 20, 1000),
                 Math.min(canvas.getHeight() + 20, 800)));
         stage.show();
